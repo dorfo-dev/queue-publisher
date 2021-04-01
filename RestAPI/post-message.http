@@ -1,0 +1,39 @@
+POST http://localhost:3000/make-transfers HTTP/1.1
+content-type: application/json
+
+{
+    "transfer": {
+        "from": "123456789",
+        "to": "987654321",
+        "type": "ted",
+        "amount" : 1500
+    }
+}
+
+###
+
+POST http://localhost:3000/make-transfers HTTP/1.1
+content-type: application/json
+
+{
+    "transfer": {
+        "from": "123456789",
+        "to": "987654321",
+        "type": "pix",
+        "amount" : 1500
+    }
+}
+
+
+###
+POST http://localhost:3000/make-transfers HTTP/1.1
+content-type: application/json
+
+{
+    "transfer": {
+        "from": "123456789",
+        "to": "987654321",
+        "type": "p2p",
+        "amount" : 1500
+    }
+}
